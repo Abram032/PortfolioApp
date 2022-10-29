@@ -1,0 +1,105 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-10-29T22:39:46.711Z",
+    "__export_source": "insomnia.desktop.app:v2022.6.0",
+    "resources": [
+        {
+            "_id": "req_4569025bad6447b0909fbb47b0c808cd",
+            "parentId": "wrk_9aa9572f465f465a88769cbbddab7fbf",
+            "modified": 1667083157599,
+            "created": 1667070737965,
+            "url": "{{ _.apiUrl }}",
+            "name": "GetAllImages",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_0bf39eb174bb42d693be113cf1c2eddd",
+                    "name": "",
+                    "value": "",
+                    "description": ""
+                }
+            ],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1667083129666,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_9aa9572f465f465a88769cbbddab7fbf",
+            "parentId": null,
+            "modified": 1667083153695,
+            "created": 1667070726371,
+            "name": "Images",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "env_1a5a555eecbd421a96f7f2a888eeef490016385b",
+            "parentId": "wrk_9aa9572f465f465a88769cbbddab7fbf",
+            "modified": 1667081700529,
+            "created": 1667070726376,
+            "name": "Base Environment",
+            "data": {
+                "baseUrl": "http://localhost:7061/api"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "baseUrl"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1667070726376,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_1a5a555eecbd421a96f7f2a888eeef490016385b",
+            "parentId": "wrk_9aa9572f465f465a88769cbbddab7fbf",
+            "modified": 1667070726379,
+            "created": 1667070726379,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_535a7f0c74644c629a80fc07d6e3764f",
+            "parentId": "wrk_9aa9572f465f465a88769cbbddab7fbf",
+            "modified": 1667070726372,
+            "created": 1667070726372,
+            "fileName": "Features",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_a8d54b285ea8497ba7f9c33f4b1992b1",
+            "parentId": "env_1a5a555eecbd421a96f7f2a888eeef490016385b",
+            "modified": 1667081709180,
+            "created": 1667070769230,
+            "name": "Local",
+            "data": {
+                "apiUrl": "{{ _.baseUrl }}/v1/images"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "apiUrl"
+                ]
+            },
+            "color": "#7d69cb",
+            "isPrivate": false,
+            "metaSortKey": 1667070769230,
+            "_type": "environment"
+        }
+    ]
+}
