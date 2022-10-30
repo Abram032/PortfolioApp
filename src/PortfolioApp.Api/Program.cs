@@ -18,7 +18,7 @@ await new HostBuilder()
     })
     .ConfigureLogging(logging =>
     {
-        logging.AddConsole();
+        //logging.AddConsole();
     })
     .ConfigureServices((host, services) =>
     {

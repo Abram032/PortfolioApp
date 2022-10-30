@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MediatR;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,12 @@ namespace PortfolioApp.ApplicationCore.AzureFunctions.Abstractions
     public abstract class ApiFunction
     {
         protected readonly ILogger<ApiFunction> _logger;
+        protected readonly ISender _sender;
         
-        public ApiFunction(ILogger<ApiFunction> logger)
+        public ApiFunction(ILogger<ApiFunction> logger, ISender sender)
         {
             _logger =  logger;
+            _sender = sender;
         }
     }
 }
